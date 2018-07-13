@@ -6,6 +6,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/tendermint/tendermint/crypto/ed25519"
 )
 
 type byter interface {
@@ -60,12 +61,12 @@ func TestKeyEncodings(t *testing.T) {
 		privSize, pubSize int // binary sizes
 	}{
 		{
-			privKey:  GenPrivKeyEd25519(),
+			privKey:  ed25519.GenPrivKeyEd25519(),
 			privSize: 69,
 			pubSize:  37,
 		},
 		{
-			privKey:  GenPrivKeySecp256k1(),
+			privKey:  secp2561k.GenPrivKeySecp256k1(),
 			privSize: 37,
 			pubSize:  38,
 		},

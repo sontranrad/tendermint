@@ -1,5 +1,10 @@
 # Changelog
 
+## PENDING
+
+BREAKING CHANGES
+- Refactor `tendermint/crypto` into many subpackages
+
 ## 0.22.2
 
 *July 10th, 2018*
